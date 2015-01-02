@@ -20,6 +20,10 @@
 		}
 		
 		///set kdv methodu kaldırıldı test 
+		
+	}
+	function get(){
+		//global get methodu
 	}
 	
 ?>
