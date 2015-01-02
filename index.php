@@ -7,6 +7,7 @@
 	class payment{
 		public $price  = null;
 		protected $kdv = null;
+		protected $amountToBePaid = null;
 	}
 	
 	class garanti extends payment implements aPayment{
@@ -23,5 +24,8 @@
 			$this->kdv = $kdv;
 		} 
 		
+		public function calcAmountToBePaid(){
+			$this->amountToBePaid = $this->price * $this->kdv;
+		}
 	}
 ?>
