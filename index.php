@@ -16,8 +16,8 @@
 			echo __CLASS__;
 		}
 		
-		public function setTotalAmount(){
-			$this->price = 3.20;
+		public function setTotalAmount($amount){
+			$this->price = $amount;
 		}
 		
 		public function setKdv($kdv){
