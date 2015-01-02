@@ -19,9 +19,7 @@
 			$this->price = 3.20;
 		}
 		
-		public function setKdv($kdv){
-			$this->kdv = $kdv;
-		} 
+		///set kdv methodu kaldırıldı test 
 	}
 	
 ?>
