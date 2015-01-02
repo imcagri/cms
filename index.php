@@ -24,8 +24,4 @@
 		} 
 		
 	}
-	function get(){
-		//global get methodu
-	}
-	
 ?>
