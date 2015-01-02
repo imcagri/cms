@@ -1,10 +1,12 @@
 <?php
 	interface aPayment{
 		public function setTotalAmount();
+		public function setKdv();
 	}
 	
 	class payment{
-		public $price = null;
+		public $price  = null;
+		protected $kdv = null;
 	}
 	
 	class garanti extends payment implements aPayment{
@@ -17,7 +19,9 @@
 			$this->price = 3.20;
 		}
 		
-		//public function 
+		public function setKdv($kdv){
+			$this->kdv = $kdv;
+		} 
 	}
 	
 ?>
